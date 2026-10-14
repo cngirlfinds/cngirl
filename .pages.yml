@@ -46,3 +46,7 @@ content:
       - name: date
         label: Fecha
         type: date
+      - name: buyerPhotos
+        label: Fotos reales de compradores
+        type: image
+        list: true
