@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "name": "Camiseta de manga larga",
+    "brand": "Celine",
+    "category": "Ropa",
+    "price": 22,
+    "image": "/assets/image-Photoroom.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7852534247&source=WD&affcode=gne2f",
+    "date": "2026-10-14"
+  }
+]
