@@ -6,6 +6,11 @@
     "price": 22,
     "image": "assets/image-Photoroom.png",
     "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7852534247&source=WD&affcode=gne2f",
-    "date": "2026-10-14"
+    "date": "2026-10-14",
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-15 001131.png",
+      "assets/Captura de pantalla 2026-10-15 001310.png",
+      "assets/Captura de pantalla 2026-10-15 001423.png"
+    ]
   }
 ]
