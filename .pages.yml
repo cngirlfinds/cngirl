@@ -1,0 +1,48 @@
+media:
+  input: assets
+  output: /assets
+
+content:
+  - name: products
+    label: Productos
+    type: file
+    path: data/products.json
+    format: json
+    list: true
+    fields:
+      - name: name
+        label: Nombre del producto
+        type: string
+        required: true
+      - name: brand
+        label: Marca
+        type: string
+        required: true
+      - name: category
+        label: Categoría
+        type: select
+        required: true
+        options:
+          values:
+            - Ropa
+            - Zapatillas
+            - Zapatos y botas
+            - Bolsos
+            - Joyería
+            - Accesorios
+            - Relojes
+            - Maletas y equipaje
+      - name: price
+        label: Precio en euros
+        type: number
+        required: true
+      - name: image
+        label: Fotografía
+        type: image
+      - name: url
+        label: Enlace de compra
+        type: string
+        required: true
+      - name: date
+        label: Fecha
+        type: date
