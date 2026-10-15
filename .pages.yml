@@ -23,15 +23,19 @@ content:
         type: select
         required: true
         options:
-          values:
-            - Ropa
-            - Zapatillas
-            - Zapatos y botas
-            - Bolsos
-            - Joyería
-            - Accesorios
-            - Relojes
-            - Maletas y equipaje
+                values:
+          - Camisetas
+          - Chaquetas
+          - Sudaderas
+          - Pantalones
+          - Zapatillas
+          - Zapatos y botas
+          - Bolsos
+          - Joyería
+          - Accesorios
+          - Relojes
+          - Maletas y equipaje
+          - Ropa
       - name: price
         label: Precio en euros
         type: number
