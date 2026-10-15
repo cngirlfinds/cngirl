@@ -23,7 +23,7 @@ content:
         type: select
         required: true
         options:
-                values:
+         values:
           - Camisetas
           - Chaquetas
           - Sudaderas
