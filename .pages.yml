@@ -18,6 +18,18 @@ content:
         label: Marca
         type: string
         required: true
+      - name: gender
+        label: Género
+        type: select
+        required: false
+        options:
+          values:
+            - value: Hombre
+              label: Hombre
+            - value: Mujer
+              label: Mujer
+            - value: Unisex
+              label: Unisex
       - name: category
         label: Categoría
         type: select
