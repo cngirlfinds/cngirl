@@ -2,6 +2,7 @@
   {
     "name": "Camiseta de manga larga",
     "brand": "Celine",
+    "gender": "Unisex",
     "category": "Camisetas",
     "price": 22,
     "image": "assets/image-Photoroom.png",
@@ -16,6 +17,7 @@
   {
     "name": "Sudadera de leopardo ",
     "brand": "Celine",
+    "gender": "Unisex",
     "category": "Sudaderas",
     "price": 56.11,
     "image": "assets/open1831483949-1831483949-58240000019c31e344b40a8133b0_2049_2049.jpg",
@@ -29,6 +31,7 @@
   {
     "name": "Botas New Rock",
     "brand": "New Rock",
+    "gender": "Mujer",
     "category": "Zapatos y botas",
     "price": 42.75,
     "image": "assets/O1CN01YthJPe1SWpyhpjzDH_!!2104702255.jpg_400x400.webp",
@@ -44,6 +47,7 @@
   {
     "name": "Adidas Jeremy scoot",
     "brand": "Adidas",
+    "gender": "Unisex",
     "category": "Zapatos y botas",
     "price": 59.45,
     "image": "assets/pcitem1149995605-4270000001a03f6aa1e40a231316-unadjust_800_800.png",
@@ -60,6 +64,7 @@
   {
     "name": "Mochila Givenchy Rottweiler",
     "brand": "Givenchy",
+    "gender": "Unisex",
     "category": "Maletas y equipaje",
     "price": 66.95,
     "image": "assets/image-Photoroom (1).png",
@@ -73,6 +78,7 @@
   {
     "name": "Balenciaga Strike",
     "brand": "Balenciaga",
+    "gender": "Hombre",
     "category": "Zapatos y botas",
     "price": 178.64,
     "image": "assets/open1831483949-1831483949-27e10000019dd2f2fd810a23b4de_1254_1254.jpg",
@@ -87,6 +93,7 @@
   {
     "name": "Rick Owens x Chrome Hearts",
     "brand": "Rick Owens",
+    "gender": "Unisex",
     "category": "Zapatos y botas",
     "price": 51.18,
     "image": "assets/O1CN01maF5bO1xIPnfUO7TV_!!2212816476420-0-cib.jpg",
@@ -102,6 +109,7 @@
   {
     "name": "Rick Owens Jumbo Lace",
     "brand": "Rick Owens",
+    "gender": "Unisex",
     "category": "Zapatos y botas",
     "price": 52.76,
     "image": "assets/pcitem1839532311-51bc0000018fa4edd7bf0a8133cc_800_800.jpg",
@@ -117,6 +125,7 @@
   {
     "name": "Maison Margiela Future",
     "brand": "Maison Margiela",
+    "gender": "Hombre",
     "category": "Zapatos y botas",
     "price": 69.7,
     "image": "assets/open1620179513-252808396-620a0000018f572bad900a8115b5_1000_738.jpg",
@@ -133,6 +142,7 @@
   {
     "name": "Maison Margiela gats",
     "brand": "Maison Margiela",
+    "gender": "Hombre",
     "category": "Zapatos y botas",
     "price": 68.06,
     "image": "assets/open1624782517-1624782517-569f00000198f1b0641e0a23b491_1440_1440.jpg",
@@ -147,6 +157,7 @@
   {
     "name": "Converse x Chrome Hearts",
     "brand": "Converse",
+    "gender": "Unisex",
     "category": "Zapatos y botas",
     "price": 97.69,
     "image": "assets/wdseller1748043198-72590000019a838036a30a8133cc_1180_1572.jpg",
@@ -161,6 +172,7 @@
   {
     "name": "Philipp Plein High Top",
     "brand": "Philipp plein",
+    "gender": "Unisex",
     "category": "Zapatos y botas",
     "price": 77.91,
     "image": "assets/open1624782517-1624782517-0a6000000199e43af9aa0a231226_800_800.jpg",
@@ -174,6 +186,7 @@
   {
     "name": "Philipp Plein Sneaker",
     "brand": "Philipp Plein",
+    "gender": "Hombre",
     "category": "Zapatos y botas",
     "price": 57.34,
     "image": "assets/open1624782517-1624782517-687100000199ddf6067c0aa043f9_750_750.jpg",
@@ -194,12 +207,14 @@
     "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7853539834&source=WD&affcode=gne2f",
     "date": "2026-10-15",
     "buyerPhotos": [
-      "assets/Captura de pantalla 2026-10-15 221353-1.png"
+      "assets/Captura de pantalla 2026-10-18 171212.png",
+      "assets/Captura de pantalla 2026-10-18 171232.png"
     ]
   },
   {
     "name": "Balenciaga Track",
     "brand": "Balenciaga",
+    "gender": "Hombre",
     "category": "Zapatos y botas",
     "price": 66.48,
     "image": "assets/pcitem1783780470-5c060000018c5be62ca40a2102d0_901_692.jpg",
@@ -213,6 +228,7 @@
   {
     "name": "Balenciaga Runners",
     "brand": "Balenciaga",
+    "gender": "Hombre",
     "category": "Zapatos y botas",
     "price": 73.6,
     "image": "assets/open1286766626-1234478995-1d9f000001956762ff890aa0834c_1284_1284.jpg",
@@ -240,6 +256,7 @@
   {
     "name": "Tarjetero Coach ",
     "brand": "Coach",
+    "gender": "Mujer",
     "category": "Accesorios",
     "price": 2.68,
     "image": "assets/open1699464805-1699464805-41190000019f4749d0530a8133b0_1080_1080.jpg",
@@ -331,6 +348,7 @@
   {
     "name": "Bolso Juicy Couture",
     "brand": "Juicy Couture",
+    "gender": "Mujer",
     "category": "Bolsos",
     "price": 148.19,
     "image": "assets/open1657269155-1234478995-04860000019f4ac9ad590a8115c2-unadjust_800_800.png",
@@ -356,6 +374,7 @@
   {
     "name": "Tacones de leopardo",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Zapatos y botas",
     "price": 19.26,
     "image": "assets/O1CN01heLhmfoXFKF1chua_!!2222827563143-0-cib.jpg_400x400-1.jpg",
@@ -365,6 +384,7 @@
   {
     "name": "Beckett",
     "brand": "Isabel Marant",
+    "gender": "Mujer",
     "category": "Zapatos y botas",
     "price": 61.39,
     "image": "assets/pcitem902087794413-0e0b000001a07848c66e0a8132bd_1440_1920.jpg",
@@ -378,6 +398,7 @@
   {
     "name": "Tacones Yves Saint Laurent",
     "brand": "Yves Saint Laurent",
+    "gender": "Mujer",
     "category": "Zapatos y botas",
     "price": 30.7,
     "image": "assets/O1CN01TsRt5N1n5un47XoEu_!!2218960725039-0-cib.jpg_400x400.jpg",
@@ -391,6 +412,7 @@
   {
     "name": "Bolso Chrome Hearts",
     "brand": "Chrome Hearts",
+    "gender": "Mujer",
     "category": "Bolsos",
     "price": 11.43,
     "image": "assets/O1CN01rF3EDN1apAx3N4xgb_!!2808323378-0-cib.jpg_400x400.jpg",
@@ -404,6 +426,7 @@
   {
     "name": "Bolso Y2K",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Bolsos",
     "price": 20.99,
     "image": "assets/O1CN011ge7251OUlttFqwuH_!!2200538641709.jpg_400x400.webp",
@@ -418,6 +441,7 @@
   {
     "name": "Bolso Gucci",
     "brand": "Gucci",
+    "gender": "Mujer",
     "category": "Bolsos",
     "price": 41.26,
     "image": "assets/O1CN01ktLkoH1Oi3TTrN5Mh_!!2221134691738-0-cib.jpg_400x400.jpg",
@@ -430,6 +454,7 @@
   {
     "name": "Tarjetero Vivienne",
     "brand": "Vivienne Westwood",
+    "gender": "Mujer",
     "category": "Accesorios",
     "price": 3.69,
     "image": "assets/O1CN0190EJLo1TLDmBYNn5C_!!4611686018427383213-0-item_pic.jpg_400x400.webp",
@@ -470,6 +495,7 @@
   {
     "name": "Camiseta y2k",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Camisetas",
     "price": 16.56,
     "image": "assets/O1CN01bwaI9T1YhjHE5Cdsn_!!777583091.jpg_400x400.webp",
@@ -482,6 +508,7 @@
   {
     "name": "Camiseta y2k",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Camisetas",
     "price": 24.13,
     "image": "assets/Untitled_-_2026-04-21T235507.949.png",
@@ -497,6 +524,7 @@
   {
     "name": "Pantalon streetwear",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Pantalones",
     "price": 7,
     "image": "assets/O1CN01KYrtQN1mOPFM0a9Hl_!!2208404604944-0-cib.jpg_400x400.jpg",
@@ -510,6 +538,7 @@
   {
     "name": "Pantalon Punk",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Pantalones",
     "price": 56.82,
     "image": "assets/Untitled_-_2025-12-07T030638.517.png",
@@ -523,6 +552,7 @@
   {
     "name": "Pantalon Vintage",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Pantalones",
     "price": 41.12,
     "image": "assets/O1CN01nfB9YR1pOM0xdWGu7_!!2206846405350.jpg_400x400.webp",
@@ -537,6 +567,7 @@
   {
     "name": "Shorts",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Pantalones",
     "price": 26.99,
     "image": "assets/O1CN01YTPIml1pOM0yH8OQn_!!2206846405350.webp",
@@ -551,6 +582,7 @@
   {
     "name": "Shorts Grunge",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Pantalones",
     "price": 34.98,
     "image": "assets/O1CN01dUsy5u1pOM0u6FxpE_!!2206846405350.jpg_400x400.webp",
@@ -564,6 +596,7 @@
   {
     "name": "Chaqueta",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Chaquetas",
     "price": 71.1,
     "image": "assets/O1CN015KTjW81YhjJy7Axy7~crop,100,0,600,800~_!!777583091.jpg_400x400.webp",
@@ -577,6 +610,7 @@
   {
     "name": "Camiseta de manga larga",
     "brand": "Chanel",
+    "gender": "Mujer",
     "category": "Camisetas",
     "price": 21.51,
     "image": "assets/Untitled_-_2025-09-12T010140.395.jpg",
@@ -591,6 +625,7 @@
   {
     "name": "Camiseta una manga",
     "brand": "Sin marca",
+    "gender": "Mujer",
     "category": "Camisetas",
     "price": 20.82,
     "image": "assets/O1CN01pmSk0G1pOM11VN1BB_!!2206846405350.jpg_480x480q80.jpg_.webp",
@@ -604,6 +639,7 @@
   {
     "name": "Polo",
     "brand": "Ralph Lauren",
+    "gender": "Hombre",
     "category": "Camisetas",
     "price": 21.62,
     "image": "assets/open1615844877-252808396-0a28000001977395ba170a8133b0_1920_1920.jpg",
@@ -618,6 +654,7 @@
   {
     "name": "Camiseta con cuello de pelo",
     "brand": "Sin marca",
+    "gender": "Hombre",
     "category": "Camisetas",
     "price": 46.56,
     "image": "assets/Captura de pantalla 2026-10-18 015920.png",
