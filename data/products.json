@@ -924,5 +924,19 @@
       "assets/Captura de pantalla 2026-10-19 222438.png",
       "assets/Captura de pantalla 2026-10-19 222420.png"
     ]
+  },
+  {
+    "name": "Camiseta Acne Studios Stockholm",
+    "brand": "Acne Studios",
+    "gender": "Unisex",
+    "category": "Camisetas",
+    "price": 12.68,
+    "image": "assets/open1841026309-252808396-590800000196d9ac15d60a8115c2_1300_1300.jpg",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D1002875584604&affcode=doppelfit",
+    "date": "2026-10-19",
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-19 224203.png",
+      "assets/Captura de pantalla 2026-10-19 224235.png"
+    ]
   }
 ]
