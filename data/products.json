@@ -93,6 +93,9 @@
   {
     "name": "Rick Owens x Chrome Hearts",
     "brand": "Rick Owens",
+    "extraBrands": [
+      "Chrome Hearts"
+    ],
     "gender": "Unisex",
     "category": "Zapatillas",
     "price": 51.18,
