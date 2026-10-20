@@ -1,4 +1,4 @@
-const cats=["Camisetas","Chaquetas","Sudaderas","Pantalones","Conjuntos","Zapatillas","Zapatos y botas","Bolsos","Joyería","Accesorios","Relojes","Maletas y equipaje","Ropa"];
+const cats=["Camisetas","Chaquetas","Sudaderas","Pantalones","Conjuntos","Zapatillas","Botas y botines","Zapatos y tacones","Sandalias y chanclas","Bolsos","Joyería","Accesorios","Relojes","Maletas y equipaje"];
 const featured=["Juicy Couture","Victoria's Secret","Rick Owens","Chrome Hearts","Miu Miu","Balenciaga","Nike","Vivienne Westwood"];
 const palette={Negro:"#151515",Blanco:"#fff",Rosa:"#f28cbd",Rojo:"#ba2d3e",Azul:"#4c7dc3",Marrón:"#81583c",Gris:"#999",Verde:"#4d956d",Beige:"#d4bba0",Morado:"#8c61b0",Amarillo:"#edca53",Naranja:"#eb8843",Dorado:"#c6a24b",Plateado:"#b6bdc5"};
 let products=[],brands=[],cat="",gender="",color="";
