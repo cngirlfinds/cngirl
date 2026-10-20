@@ -41,13 +41,15 @@ content:
           - Sudaderas
           - Pantalones
           - Conjuntos
-          - Zapatos y botas
+          - Zapatillas
+          - Botas y botines
+          - Zapatos y tacones
+          - Sandalias y chanclas
           - Bolsos
           - Joyería
           - Accesorios
           - Relojes
           - Maletas y equipaje
-          - Ropa
       - name: price
         label: Precio en euros
         type: number
