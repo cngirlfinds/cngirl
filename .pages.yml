@@ -18,6 +18,11 @@ content:
         label: Marca
         type: string
         required: true
+      - name: extraBrands
+        label: Marcas adicionales (colaboraciones)
+        type: string
+        list: true
+        required: false
       - name: gender
         label: Género
         type: select
