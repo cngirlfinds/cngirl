@@ -1042,7 +1042,7 @@
   {
     "name": "Dior SS06 Jacket",
     "brand": "Dior",
-    "gender": "Unisex",
+    "gender": "Hombre",
     "category": "Chaquetas",
     "price": 66.88,
     "image": "assets/cellImage_705634069_54.jpg",
@@ -1080,7 +1080,10 @@
   {
     "name": "Racer x New Rock Boots",
     "brand": "New Rock",
-    "gender": "Unisex",
+    "extraBrands": [
+      "Racer"
+    ],
+    "gender": "Hombre",
     "category": "Botas y botines",
     "price": 196.17,
     "image": "assets/cellImage_705634069_89.jpg",
@@ -1095,7 +1098,12 @@
     "price": 57.96,
     "image": "assets/cellImage_705634069_84.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853501353&source=WD&affcode=gne2f",
-    "date": "2026-10-21"
+    "date": "2026-10-21",
+    "buyerPhotos": [
+      "assets/foto_1.png",
+      "assets/foto_2.png",
+      "assets/foto_3.png"
+    ]
   },
   {
     "name": "20471102 Hyoma Sleeve",
