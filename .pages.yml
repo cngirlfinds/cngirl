@@ -5,10 +5,18 @@ media:
 content:
   - name: products
     label: Productos
-    type: file
-    path: data/products.json
+    type: collection
+    path: data/products
     format: json
-    list: true
+    filename: "{year}-{month}-{day}-{hour}-{minute}-{second}-{primary}.json"
+    view:
+      fields: [name, brand, category, price, date]
+      primary: name
+      sort: [date, name]
+      search: [name, brand, category]
+      default:
+        sort: date
+        order: desc
     fields:
       - name: name
         label: Nombre del producto
@@ -40,21 +48,21 @@ content:
         type: select
         required: true
         options:
-         values:
-          - Camisetas
-          - Chaquetas
-          - Sudaderas
-          - Pantalones
-          - Conjuntos
-          - Zapatillas
-          - Botas y botines
-          - Zapatos y tacones
-          - Sandalias y chanclas
-          - Bolsos
-          - Joyería
-          - Accesorios
-          - Relojes
-          - Maletas y equipaje
+          values:
+            - Camisetas
+            - Chaquetas
+            - Sudaderas
+            - Pantalones
+            - Conjuntos
+            - Zapatillas
+            - Botas y botines
+            - Zapatos y tacones
+            - Sandalias y chanclas
+            - Bolsos
+            - Joyería
+            - Accesorios
+            - Relojes
+            - Maletas y equipaje
       - name: price
         label: Precio en euros
         type: number
@@ -73,3 +81,7 @@ content:
         label: Fotos reales de compradores
         type: image
         list: true
+      - name: color
+        label: Color
+        type: string
+        required: false
