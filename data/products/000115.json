@@ -1,11 +1,14 @@
 {
-  "name": "No E Mosen Wedge Boots",
-  "brand": "Sin marca",
-  "gender": "Unisex",
+  "name": "Isabel Marant",
+  "brand": "Isabel Marant",
+  "gender": "Mujer",
   "category": "Botas y botines",
-  "price": 88.28,
+  "price": 74.73,
   "image": "assets/cellImage_705634069_244.jpg",
-  "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850520333&source=WD&affcode=gne2f",
+  "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D994691599721&affcode=doppelfit",
   "date": "2026-10-22",
-  "buyerPhotos": []
+  "buyerPhotos": [
+    "assets/Captura de pantalla 2026-10-23 231338.png",
+    "assets/Captura de pantalla 2026-10-23 231401.png"
+  ]
 }
