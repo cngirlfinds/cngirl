@@ -1,11 +1,14 @@
 {
   "name": "Forgetraven Longsleeve",
-  "brand": "Sin marca",
+  "brand": "Forgetraven",
   "gender": "Unisex",
   "category": "Camisetas",
-  "price": 5.35,
+  "price": 8.7,
   "image": "assets/cellImage_705634069_185.jpg",
   "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853504778&source=WD&affcode=gne2f",
   "date": "2026-10-22",
-  "buyerPhotos": []
+  "buyerPhotos": [
+    "assets/Captura de pantalla 2026-10-23 165901-1.png",
+    "assets/Captura de pantalla 2026-10-23 165840-1.png"
+  ]
 }
