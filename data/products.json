@@ -1726,13 +1726,16 @@
   {
     "name": "Maison Margiela High Top Gats",
     "brand": "Maison Margiela",
-    "gender": "Unisex",
+    "gender": "Hombre",
     "category": "Camisetas",
-    "price": 34.78,
+    "price": 67.99,
     "image": "assets/cellImage_705634069_277.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853508270&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D691320387091&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 180528.png",
+      "assets/Captura de pantalla 2026-10-23 180547.png"
+    ]
   },
   {
     "name": "Maison Margiela High-top Paint Splatter gat",
