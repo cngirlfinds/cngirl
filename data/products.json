@@ -1510,15 +1510,20 @@
     ]
   },
   {
-    "name": "Converse x CH",
+    "name": "Converse x Chrome Hearts",
     "brand": "Converse",
+    "extraBrands": [
+      "Chrome Hearts"
+    ],
     "gender": "Unisex",
     "category": "Zapatillas",
-    "price": 62.42,
+    "price": 82.56,
     "image": "assets/cellImage_705634069_241.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853567646&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D821586611613&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 230053.png"
+    ]
   },
   {
     "name": "No E Mosen Wedge Boots",
