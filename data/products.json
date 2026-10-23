@@ -1748,26 +1748,31 @@
     "date": "2026-10-22"
   },
   {
-    "name": "Maison Margiela Future (Link 2)",
+    "name": "Maison Margiela Future ",
     "brand": "Maison Margiela",
-    "gender": "Unisex",
+    "gender": "Hombre",
     "category": "Zapatillas",
-    "price": 48.15,
+    "price": 39.36,
     "image": "assets/cellImage_705634069_284.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850510491&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D913187470654&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 181824-1.png",
+      "assets/Captura de pantalla 2026-10-23 181843.png"
+    ]
   },
   {
-    "name": "Maison Margiela Futures (Link 3)",
+    "name": "Maison Margiela Futures ",
     "brand": "Maison Margiela",
-    "gender": "Unisex",
+    "gender": "Hombre",
     "category": "Zapatillas",
-    "price": 44.59,
+    "price": 38.4,
     "image": "assets/cellImage_705634069_285.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850488879&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D926301913942&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 182127.png"
+    ]
   },
   {
     "name": "Rick Owens Jumbo Lace Blacked out",
