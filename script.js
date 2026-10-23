@@ -70,7 +70,9 @@ function filters(){
 
  el("genders").replaceChildren();
 
- ["Todos","Mujer","Hombre","Unisex"].forEach(g=>{
+ // UNISEX NO APARECE COMO BOTÓN.
+ // SUS PRODUCTOS SIGUEN INCLUIDOS EN LOS DEMÁS FILTROS.
+ ["Todos","Mujer","Hombre"].forEach(g=>{
   el("genders").append(
    makeButton(g,g==="Todos"?!gender:gender===g,()=>{
     gender=g==="Todos"?"":g;
@@ -113,7 +115,6 @@ function filters(){
 function setBrand(b){
  const select=el("brand");
 
- // Asegurarnos de que la marca exista en el desplegable.
  if(b && !Array.from(select.options).some(o=>o.value===b)){
   select.add(new Option(b,b));
  }
@@ -155,8 +156,6 @@ function buscarMarcaConEnter(){
  if(marca){
   setBrand(marca);
  }else{
-  // Si no coincide con una marca de la lista,
-  // buscar igualmente el texto en el catálogo.
   el("brand").value="";
   el("search").value=el("brand-search").value;
   el("header-search").value=el("brand-search").value;
@@ -182,11 +181,8 @@ function coincideBusqueda(p,q){
 
  const texto=normalizarBusqueda(campos.join(" "));
 
- // Coincidencia normal, incluyendo nombres y marcas.
  if(texto.includes(q))return true;
 
- // Permite búsquedas de varias palabras sin exigir
- // que aparezcan juntas en el mismo orden.
  const palabras=q.split(/\s+/).filter(Boolean);
 
  if(palabras.length>1 &&
@@ -194,7 +190,6 @@ function coincideBusqueda(p,q){
   return true;
  }
 
- // Coincidencia con marcas conocidas del catálogo.
  return brands.some(marca=>{
   const nombreMarca=normalizarBusqueda(marca);
 
@@ -219,6 +214,8 @@ function render(){
   const pg=norm(p.gender);
   const pc=norm(p.color);
 
+  // LOS PRODUCTOS UNISEX APARECEN EN TODOS,
+  // MUJER Y HOMBRE.
   const genderOk=
    !gender||
    pg===norm(gender)||
@@ -358,7 +355,6 @@ async function init(){
   filters();
   render();
 
-  // Cargar las visitas sin bloquear el catálogo.
   await cargarVisitas();
   render();
 
