@@ -1127,11 +1127,14 @@
     "brand": "Maison Margiela",
     "gender": "Unisex",
     "category": "Zapatillas",
-    "price": 74.01,
+    "price": 52,
     "image": "assets/cellImage_705634069_100.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7856719232&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7779545401&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 160754.png",
+      "assets/Captura de pantalla 2026-10-23 160312.png"
+    ]
   },
   {
     "name": "Hysteric Glamour White Crust Hagi Jeans",
