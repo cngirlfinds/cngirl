@@ -1305,11 +1305,13 @@
     "brand": "Acne Studios",
     "gender": "Unisex",
     "category": "Accesorios",
-    "price": 1.78,
+    "price": 1.45,
     "image": "assets/cellImage_705634069_157.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7874594574&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fdetail.1688.com%2Foffer%2F786657408963.html&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 165327.png"
+    ]
   },
   {
     "name": "Walter Van Beirendonck x Eastpak Monster Backpack",
