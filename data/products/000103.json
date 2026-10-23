@@ -1,11 +1,14 @@
 {
-  "name": "Balenciaga Arena High (Link 2)",
+  "name": "Balenciaga Arena High ",
   "brand": "Balenciaga",
   "gender": "Unisex",
   "category": "Zapatillas",
-  "price": 41.91,
+  "price": 47.24,
   "image": "assets/cellImage_705634069_211.jpg",
   "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853516526&source=WD&affcode=gne2f",
   "date": "2026-10-22",
-  "buyerPhotos": []
+  "buyerPhotos": [
+    "assets/Captura de pantalla 2026-10-23 170657.png",
+    "assets/Captura de pantalla 2026-10-23 170713.png"
+  ]
 }
