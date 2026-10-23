@@ -1662,26 +1662,28 @@
     ]
   },
   {
-    "name": "Maison Margiela Gats (Link 1)",
+    "name": "Maison Margiela Gats",
     "brand": "Maison Margiela",
-    "gender": "Unisex",
+    "gender": "Hombre",
     "category": "Zapatillas",
-    "price": 76.69,
+    "price": 59.6,
     "image": "assets/cellImage_705634069_269.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850367415&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D706213994883&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 172755.png",
+      "assets/Captura de pantalla 2026-10-23 172813.png"
+    ]
   },
   {
-    "name": "Maison Margiela Gats (Link 1)",
+    "name": "Maison Margiela Gats",
     "brand": "Maison Margiela",
     "gender": "Unisex",
     "category": "Zapatillas",
-    "price": 76.69,
+    "price": 69.4,
     "image": "assets/cellImage_705634069_270.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850367415&source=WD&affcode=gne2f",
-    "date": "2026-10-22",
-    "buyerPhotos": []
+    "date": "2026-10-22"
   },
   {
     "name": "Maison Margiela Gats (Link 1)",
