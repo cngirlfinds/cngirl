@@ -1100,13 +1100,20 @@
   {
     "name": "Moncler x Rick Owens Boots",
     "brand": "Rick Owens",
+    "extraBrands": [
+      "Moncler"
+    ],
     "gender": "Unisex",
     "category": "Botas y botines",
-    "price": 160.51,
+    "price": 118,
     "image": "assets/cellImage_705634069_92.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7860787280&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D969429777503&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 224110.png",
+      "assets/Captura de pantalla 2026-10-23 224145.png",
+      "assets/Captura de pantalla 2026-10-23 224029.png"
+    ]
   },
   {
     "name": "Evisu Sleeve",
