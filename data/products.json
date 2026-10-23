@@ -1493,15 +1493,21 @@
     "date": "2026-10-22"
   },
   {
-    "name": "Converse x CH",
+    "name": "Converse x Chrome Hearts",
     "brand": "Converse",
+    "extraBrands": [
+      "Chrome Hearts"
+    ],
     "gender": "Unisex",
     "category": "Zapatillas",
     "price": 65.1,
     "image": "assets/cellImage_705634069_243.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853460628&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 225658.png",
+      "assets/Captura de pantalla 2026-10-23 225636.png"
+    ]
   },
   {
     "name": "Converse x CH",
