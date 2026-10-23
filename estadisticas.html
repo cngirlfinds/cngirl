@@ -1,1 +1,190 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CN Girl | Estadísticas</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff2f8;color:#291525;font-family:Arial,sans-serif}
+main{max-width:1050px;margin:auto;padding:35px 20px}
+h1{font-size:32px}
+.card{background:white;border:1px solid #f2d2e3;border-radius:18px;padding:22px;margin-bottom:18px}
+.sub{color:#95657e}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;margin:25px 0}
+.num{font-size:34px;font-weight:bold;margin-top:12px}
+button{background:#e72d90;color:white;border:0;border-radius:10px;padding:13px 20px;font-weight:bold;cursor:pointer}
+input{width:100%;padding:14px;border:1px solid #e5bdd3;border-radius:10px;margin:15px 0}
+#login{max-width:420px;margin:70px auto}
+#panel{display:none}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.tablewrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:480px}
+th,td{padding:14px;text-align:left;border-bottom:1px solid #f3e2eb}
+th{color:#985d7c}
+a{color:#d2227e}
+#mensaje{color:#ba2267}
+</style>
+</head>
+<body>
+<main>
+<section id="login" class="card">
+<h1>CN GIRL 🎀</h1>
+<p class="sub">Panel privado de estadísticas</p>
+<p>Accede con tu correo autorizado.</p>
+<input id="email" type="email" placeholder="Correo electrónico">
+<button id="entrar">Recibir enlace de acceso</button>
+<p id="mensaje"></p>
+</section>
+
+<section id="panel">
+<div class="top">
+<div>
+<h1>CN GIRL 📊</h1>
+<p class="sub">Estadísticas de tus productos</p>
+</div>
+<button id="salir">Salir</button>
+</div>
+
+<div class="cards">
+<div class="card">👀 Visitas<div class="num" id="visitas">0</div></div>
+<div class="card">🛍️ Clics<div class="num" id="clics">0</div></div>
+<div class="card">📦 Productos visitados<div class="num" id="productos">0</div></div>
+<div class="card">📈 Ratio de clics<div class="num" id="conversion">0%</div></div>
+</div>
+
+<div class="card">
+<div class="top">
+<h2>🏆 Productos más populares</h2>
+<button id="actualizar">Actualizar</button>
+</div>
+<div class="tablewrap">
+<table>
+<thead>
+<tr><th>Producto</th><th>Visitas</th><th>Clics</th><th>Ratio</th></tr>
+</thead>
+<tbody id="filas"></tbody>
+</table>
+</div>
+<p class="sub" id="estado"></p>
+</div>
+</section>
+</main>
+
+<script>
+const SUPABASE_URL = "PENDIENTE_URL";
+const SUPABASE_KEY = "PENDIENTE_CLAVE_PUBLICA";
+
+const db = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+
+const $ = id => document.getElementById(id);
+
+$("entrar").onclick = async () => {
+  const email = $("email").value.trim();
+  if (!email) {
+    $("mensaje").textContent = "Escribe tu correo.";
+    return;
+  }
+
+  $("mensaje").textContent = "Enviando enlace...";
+
+  const { error } = await db.auth.signInWithOtp({
+    email,
+    options: {
+      emailRedirectTo: location.origin + location.pathname,
+      shouldCreateUser: false
+    }
+  });
+
+  $("mensaje").textContent = error
+    ? error.message
+    : "Revisa tu correo electrónico.";
+};
+
+$("salir").onclick = async () => {
+  await db.auth.signOut();
+  location.reload();
+};
+
+$("actualizar").onclick = cargar;
+
+async function cargar() {
+  $("estado").textContent = "Cargando...";
+
+  const { data, error } = await db.rpc("cngirl_dashboard");
+
+  if (error) {
+    $("estado").textContent = error.message;
+    return;
+  }
+
+  const lista = data || [];
+  const visitas = lista.reduce((s,p) => s + Number(p.visitas), 0);
+  const clics = lista.reduce((s,p) => s + Number(p.clics), 0);
+
+  $("visitas").textContent = visitas;
+  $("clics").textContent = clics;
+  $("productos").textContent = lista.length;
+  $("conversion").textContent = visitas
+    ? (clics / visitas * 100).toFixed(1) + "%"
+    : "0%";
+
+  $("filas").replaceChildren();
+
+  for (const p of lista) {
+    const tr = document.createElement("tr");
+    const enlace = document.createElement("a");
+
+    enlace.href = "producto.html?id=" +
+      encodeURIComponent(p.product_id);
+    enlace.target = "_blank";
+    enlace.textContent = "Producto " + p.product_id;
+
+    const primera = document.createElement("td");
+    primera.append(enlace);
+    tr.append(primera);
+
+    const ratio = Number(p.visitas)
+      ? (Number(p.clics) / Number(p.visitas) * 100).toFixed(1) + "%"
+      : "0%";
+
+    for (const valor of [p.visitas, p.clics, ratio]) {
+      const td = document.createElement("td");
+      td.textContent = valor;
+      tr.append(td);
+    }
+
+    $("filas").append(tr);
+  }
+
+  $("estado").textContent = "Datos actualizados.";
+}
+
+async function iniciar() {
+  const { data: { session } } = await db.auth.getSession();
+
+  if (session) {
+    $("login").style.display = "none";
+    $("panel").style.display = "block";
+    await cargar();
+  }
+}
+
+db.auth.onAuthStateChange((_event, session) => {
+  if (session) {
+    $("login").style.display = "none";
+    $("panel").style.display = "block";
+    cargar();
+  }
+});
+
+iniciar();
+</script>
+</body>
+</html>
+
