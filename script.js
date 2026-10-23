@@ -12,7 +12,15 @@ const SUPABASE_PUBLIC_KEY="sb_publishable_lf6NPiYEJqdvsW8PU1_VOA_nGuOinYb";
 const el=id=>document.getElementById(id);
 const norm=v=>String(v||"").trim().toLocaleLowerCase("es");
 
-// ESTADÍSTICAS DE VISITAS
+function normalizarBusqueda(v){
+ return norm(v)
+  .normalize("NFD")
+  .replace(/[\u0300-\u036f]/g,"")
+  .replace(/[’‘`´]/g,"'")
+  .replace(/\s+/g," ");
+}
+
+// VISITAS PÚBLICAS
 async function cargarVisitas(){
  try{
   const r=await fetch(SUPABASE_STATS_URL,{
@@ -32,7 +40,6 @@ async function cargarVisitas(){
   datos.forEach(p=>{
    visitasPorProducto[String(p.product_id)]=Number(p.visitas)||0;
   });
-
  }catch(e){
   console.warn("No se pudieron cargar las visitas:",e);
  }
@@ -51,31 +58,37 @@ function makeButton(label,active,fn){
 function filters(){
  el("categories").replaceChildren();
 
- ["Todas",...cats].forEach(c=>el("categories").append(
-  makeButton(c,c==="Todas"?!cat:cat===c,()=>{
-   cat=c==="Todas"?"":c;
-   filters();
-   render();
-  })
- ));
+ ["Todas",...cats].forEach(c=>{
+  el("categories").append(
+   makeButton(c,c==="Todas"?!cat:cat===c,()=>{
+    cat=c==="Todas"?"":c;
+    filters();
+    render();
+   })
+  );
+ });
 
  el("genders").replaceChildren();
 
- ["Todos","Mujer","Hombre","Unisex"].forEach(g=>el("genders").append(
-  makeButton(g,g==="Todos"?!gender:gender===g,()=>{
-   gender=g==="Todos"?"":g;
-   filters();
-   render();
-  })
- ));
+ ["Todos","Mujer","Hombre","Unisex"].forEach(g=>{
+  el("genders").append(
+   makeButton(g,g==="Todos"?!gender:gender===g,()=>{
+    gender=g==="Todos"?"":g;
+    filters();
+    render();
+   })
+  );
+ });
 
  el("colors").replaceChildren();
 
- el("colors").append(makeButton("Todos",!color,()=>{
-  color="";
-  filters();
-  render();
- }));
+ el("colors").append(
+  makeButton("Todos",!color,()=>{
+   color="";
+   filters();
+   render();
+  })
+ );
 
  Object.entries(palette).forEach(([name,hex])=>{
   const b=document.createElement("button");
@@ -96,53 +109,110 @@ function filters(){
  });
 }
 
-// SELECCIONAR MARCA
+// MARCAS
 function setBrand(b){
- el("brand").value=b;
+ const select=el("brand");
+
+ // Asegurarnos de que la marca exista en el desplegable.
+ if(b && !Array.from(select.options).some(o=>o.value===b)){
+  select.add(new Option(b,b));
+ }
+
+ select.value=b;
  el("brand-search").value="";
  updateBrandOptions();
  render();
+
  el("catalogo").scrollIntoView({behavior:"smooth"});
 }
 
-// ACTUALIZAR LISTA DE MARCAS
 function updateBrandOptions(){
- const search=norm(el("brand-search").value);
+ const search=normalizarBusqueda(el("brand-search").value);
  const select=el("brand");
  const selected=select.value;
 
  select.replaceChildren(new Option("Todas las marcas",""));
 
  brands
-  .filter(b=>norm(b).includes(search)||b===selected)
+  .filter(b=>
+   normalizarBusqueda(b).includes(search)||
+   b===selected
+  )
   .forEach(b=>select.add(new Option(b,b)));
 
  select.value=selected;
 }
 
-// NUEVO: BUSCAR MARCA PULSANDO ENTER
 function buscarMarcaConEnter(){
- const busqueda=norm(el("brand-search").value);
-
+ const busqueda=normalizarBusqueda(el("brand-search").value);
  if(!busqueda)return;
 
  const marca=
-  brands.find(b=>norm(b)===busqueda)||
-  brands.find(b=>norm(b).startsWith(busqueda))||
-  brands.find(b=>norm(b).includes(busqueda));
+  brands.find(b=>normalizarBusqueda(b)===busqueda)||
+  brands.find(b=>normalizarBusqueda(b).startsWith(busqueda))||
+  brands.find(b=>normalizarBusqueda(b).includes(busqueda));
 
  if(marca){
   setBrand(marca);
  }else{
-  el("brand-search").setCustomValidity("No encontramos esa marca");
-  el("brand-search").reportValidity();
-  el("brand-search").setCustomValidity("");
+  // Si no coincide con una marca de la lista,
+  // buscar igualmente el texto en el catálogo.
+  el("brand").value="";
+  el("search").value=el("brand-search").value;
+  el("header-search").value=el("brand-search").value;
+  render();
+  el("catalogo").scrollIntoView({behavior:"smooth"});
  }
+}
+
+// BUSCAR PRODUCTOS POR NOMBRE O MARCA
+function coincideBusqueda(p,q){
+ if(!q)return true;
+
+ const marcasAdicionales=Array.isArray(p.extraBrands)
+  ?p.extraBrands
+  :[];
+
+ const campos=[
+  p.name,
+  p.brand,
+  p.category,
+  ...marcasAdicionales
+ ];
+
+ const texto=normalizarBusqueda(campos.join(" "));
+
+ // Coincidencia normal, incluyendo nombres y marcas.
+ if(texto.includes(q))return true;
+
+ // Permite búsquedas de varias palabras sin exigir
+ // que aparezcan juntas en el mismo orden.
+ const palabras=q.split(/\s+/).filter(Boolean);
+
+ if(palabras.length>1 &&
+    palabras.every(palabra=>texto.includes(palabra))){
+  return true;
+ }
+
+ // Coincidencia con marcas conocidas del catálogo.
+ return brands.some(marca=>{
+  const nombreMarca=normalizarBusqueda(marca);
+
+  if(!nombreMarca.includes(q))return false;
+
+  return normalizarBusqueda(p.brand)===nombreMarca ||
+   marcasAdicionales.some(b=>
+    normalizarBusqueda(b)===nombreMarca
+   );
+ });
 }
 
 // MOSTRAR PRODUCTOS
 function render(){
- const q=norm(el("search").value||el("header-search").value);
+ const q=normalizarBusqueda(
+  el("search").value||el("header-search").value
+ );
+
  const b=el("brand").value;
 
  let arr=products.filter(p=>{
@@ -154,20 +224,33 @@ function render(){
    pg===norm(gender)||
    (gender!=="Unisex"&&pg==="unisex");
 
+  const brandOk=
+   !b||
+   normalizarBusqueda(p.brand)===normalizarBusqueda(b)||
+   (
+    Array.isArray(p.extraBrands)&&
+    p.extraBrands.some(m=>
+     normalizarBusqueda(m)===normalizarBusqueda(b)
+    )
+   );
+
   return (!cat||norm(p.category)===norm(cat))
-   &&(!b||p.brand===b||(Array.isArray(p.extraBrands)&&p.extraBrands.includes(b)))
+   &&brandOk
    &&genderOk
    &&(!color||pc===norm(color))
-   &&norm([p.name,p.brand,p.category].join(" ")).includes(q);
+   &&coincideBusqueda(p,q);
  });
 
  const sort=el("sort").value;
 
  arr.sort((a,b)=>
-  sort==="cheap"?Number(a.price)-Number(b.price):
-  sort==="expensive"?Number(b.price)-Number(a.price):
-  sort==="az"?String(a.name).localeCompare(String(b.name),"es"):
-  String(b.date||"").localeCompare(String(a.date||""))
+  sort==="cheap"
+   ?Number(a.price)-Number(b.price)
+   :sort==="expensive"
+   ?Number(b.price)-Number(a.price)
+   :sort==="az"
+   ?String(a.name).localeCompare(String(b.name),"es")
+   :String(b.date||"").localeCompare(String(a.date||""))
  );
 
  el("count").textContent=arr.length+" productos";
@@ -220,13 +303,14 @@ function render(){
   link.className="link";
   link.textContent="VER FOTOS Y PRODUCTO ↗";
 
-  // OJITO CON VISITAS REALES
+  // CONTADOR DE VISITAS
   const contador=document.createElement("span");
   contador.className="cngirl-views";
   contador.setAttribute("aria-label","Visitas del producto");
 
   contador.textContent=
-   "👁️ "+(visitasPorProducto[String(id)]||0).toLocaleString("es-ES");
+   "👁️ "+(visitasPorProducto[String(id)]||0)
+    .toLocaleString("es-ES");
 
   contador.style.display="inline-block";
   contador.style.marginTop="9px";
@@ -240,7 +324,7 @@ function render(){
  });
 }
 
-// INICIAR CATÁLOGO
+// CARGAR CATÁLOGO
 async function init(){
  try{
   const [loadedBrands,loadedProducts]=await Promise.all([
@@ -252,7 +336,9 @@ async function init(){
 
   products=Array.isArray(loadedProducts)
    ?loadedProducts
-   :(loadedProducts&&typeof loadedProducts==="object"?[loadedProducts]:[]);
+   :(loadedProducts&&typeof loadedProducts==="object"
+     ?[loadedProducts]
+     :[]);
 
   brands.forEach(b=>{
    const btn=document.createElement("button");
@@ -272,6 +358,7 @@ async function init(){
   filters();
   render();
 
+  // Cargar las visitas sin bloquear el catálogo.
   await cargarVisitas();
   render();
 
@@ -283,21 +370,27 @@ async function init(){
 }
 
 // BUSCADOR GENERAL
-["search","header-search"].forEach(id=>
+["search","header-search"].forEach(id=>{
  el(id).addEventListener("input",()=>{
-  const other=id==="search"?"header-search":"search";
+  const other=id==="search"
+   ?"header-search"
+   :"search";
+
   el(other).value=el(id).value;
   render();
- })
-);
+ });
+});
 
-// MARCAS Y ORDEN
-["brand","sort"].forEach(id=>
- el(id).addEventListener("change",render)
-);
+// FILTRO DE MARCAS Y ORDEN
+["brand","sort"].forEach(id=>{
+ el(id).addEventListener("change",render);
+});
 
 // BUSCADOR DE MARCAS
-el("brand-search").addEventListener("input",updateBrandOptions);
+el("brand-search").addEventListener(
+ "input",
+ updateBrandOptions
+);
 
 el("brand-search").addEventListener("keydown",e=>{
  if(e.key==="Enter"){
@@ -329,10 +422,12 @@ function panel(open){
  el("toggle-filters").setAttribute("aria-expanded",String(open));
 }
 
-el("toggle-filters").onclick=()=>
+el("toggle-filters").onclick=()=>{
  panel(!el("filter-panel").classList.contains("open"));
+};
 
 el("close-filters").onclick=()=>panel(false);
 el("apply-filters").onclick=()=>panel(false);
 
+// ARRANCAR WEB
 init();
