@@ -5476,15 +5476,14 @@
     "buyerPhotos": []
   },
   {
-    "name": "BBS Shoes Mid (Link 1)",
+    "name": "BBS Shoes Mid ",
     "brand": "BBS",
-    "gender": "Unisex",
+    "gender": "Hombre",
     "category": "Zapatillas",
     "price": 115.03,
     "image": "assets/cellImage_705634069_780.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853510778&source=WD&affcode=gne2f",
-    "date": "2026-10-22",
-    "buyerPhotos": []
+    "date": "2026-10-22"
   },
   {
     "name": "BBS Shoes Mid (Link 2)",
