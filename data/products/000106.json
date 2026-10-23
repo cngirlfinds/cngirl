@@ -3,9 +3,12 @@
   "brand": "Gucci",
   "gender": "Unisex",
   "category": "Zapatillas",
-  "price": 78.47,
+  "price": 68.11,
   "image": "assets/cellImage_705634069_216.jpg",
-  "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853559718&source=WD&affcode=gne2f",
+  "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7622585971&affcode=doppelfit",
   "date": "2026-10-22",
-  "buyerPhotos": []
+  "buyerPhotos": [
+    "assets/Captura de pantalla 2026-10-23 171256.png",
+    "assets/Captura de pantalla 2026-10-23 171313.png"
+  ]
 }
