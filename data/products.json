@@ -1203,11 +1203,14 @@
     "brand": "Maison Margiela",
     "gender": "Unisex",
     "category": "Zapatillas",
-    "price": 137.33,
+    "price": 124,
     "image": "assets/cellImage_705634069_138.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853473202&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7735833481&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-23 162649.png",
+      "assets/Captura de pantalla 2026-10-23 162726.png"
+    ]
   },
   {
     "name": "Yohji Yamamote Military Boots",
