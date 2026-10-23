@@ -1,11 +1,13 @@
 {
-  "name": "Maison Margiela Futures (Link 3)",
+  "name": "Maison Margiela Futures ",
   "brand": "Maison Margiela",
-  "gender": "Unisex",
+  "gender": "Hombre",
   "category": "Zapatillas",
-  "price": 44.59,
+  "price": 38.4,
   "image": "assets/cellImage_705634069_285.jpg",
-  "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850488879&source=WD&affcode=gne2f",
+  "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D926301913942&affcode=doppelfit",
   "date": "2026-10-22",
-  "buyerPhotos": []
+  "buyerPhotos": [
+    "assets/Captura de pantalla 2026-10-23 182127.png"
+  ]
 }
