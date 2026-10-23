@@ -12,6 +12,7 @@ const SUPABASE_PUBLIC_KEY="sb_publishable_lf6NPiYEJqdvsW8PU1_VOA_nGuOinYb";
 const el=id=>document.getElementById(id);
 const norm=v=>String(v||"").trim().toLocaleLowerCase("es");
 
+// ESTADÍSTICAS DE VISITAS
 async function cargarVisitas(){
  try{
   const r=await fetch(SUPABASE_STATS_URL,{
@@ -22,12 +23,16 @@ async function cargarVisitas(){
    },
    body:"{}"
   });
+
   if(!r.ok)throw Error("Error HTTP "+r.status);
+
   const datos=await r.json();
   visitasPorProducto={};
+
   datos.forEach(p=>{
    visitasPorProducto[String(p.product_id)]=Number(p.visitas)||0;
   });
+
  }catch(e){
   console.warn("No se pudieron cargar las visitas:",e);
  }
@@ -42,24 +47,34 @@ function makeButton(label,active,fn){
  return b;
 }
 
+// FILTROS
 function filters(){
  el("categories").replaceChildren();
+
  ["Todas",...cats].forEach(c=>el("categories").append(
   makeButton(c,c==="Todas"?!cat:cat===c,()=>{
-   cat=c==="Todas"?"":c;filters();render();
+   cat=c==="Todas"?"":c;
+   filters();
+   render();
   })
  ));
 
  el("genders").replaceChildren();
+
  ["Todos","Mujer","Hombre","Unisex"].forEach(g=>el("genders").append(
   makeButton(g,g==="Todos"?!gender:gender===g,()=>{
-   gender=g==="Todos"?"":g;filters();render();
+   gender=g==="Todos"?"":g;
+   filters();
+   render();
   })
  ));
 
  el("colors").replaceChildren();
+
  el("colors").append(makeButton("Todos",!color,()=>{
-  color="";filters();render();
+  color="";
+  filters();
+  render();
  }));
 
  Object.entries(palette).forEach(([name,hex])=>{
@@ -70,14 +85,18 @@ function filters(){
   b.setAttribute("aria-pressed",String(color===name));
   b.className="color-dot"+(color===name?" active":"");
   b.style.setProperty("--swatch",hex);
+
   b.onclick=()=>{
    color=color===name?"":name;
-   filters();render();
+   filters();
+   render();
   };
+
   el("colors").append(b);
  });
 }
 
+// SELECCIONAR MARCA
 function setBrand(b){
  el("brand").value=b;
  el("brand-search").value="";
@@ -86,6 +105,7 @@ function setBrand(b){
  el("catalogo").scrollIntoView({behavior:"smooth"});
 }
 
+// ACTUALIZAR LISTA DE MARCAS
 function updateBrandOptions(){
  const search=norm(el("brand-search").value);
  const select=el("brand");
@@ -100,6 +120,27 @@ function updateBrandOptions(){
  select.value=selected;
 }
 
+// NUEVO: BUSCAR MARCA PULSANDO ENTER
+function buscarMarcaConEnter(){
+ const busqueda=norm(el("brand-search").value);
+
+ if(!busqueda)return;
+
+ const marca=
+  brands.find(b=>norm(b)===busqueda)||
+  brands.find(b=>norm(b).startsWith(busqueda))||
+  brands.find(b=>norm(b).includes(busqueda));
+
+ if(marca){
+  setBrand(marca);
+ }else{
+  el("brand-search").setCustomValidity("No encontramos esa marca");
+  el("brand-search").reportValidity();
+  el("brand-search").setCustomValidity("");
+ }
+}
+
+// MOSTRAR PRODUCTOS
 function render(){
  const q=norm(el("search").value||el("header-search").value);
  const b=el("brand").value;
@@ -107,7 +148,11 @@ function render(){
  let arr=products.filter(p=>{
   const pg=norm(p.gender);
   const pc=norm(p.color);
-  const genderOk=!gender||pg===norm(gender)||(gender!=="Unisex"&&pg==="unisex");
+
+  const genderOk=
+   !gender||
+   pg===norm(gender)||
+   (gender!=="Unisex"&&pg==="unisex");
 
   return (!cat||norm(p.category)===norm(cat))
    &&(!b||p.brand===b||(Array.isArray(p.extraBrands)&&p.extraBrands.includes(b)))
@@ -133,9 +178,11 @@ function render(){
  if(!arr.length){
   const div=document.createElement("div");
   div.className="empty";
+
   div.textContent=products.length
    ?"No encontramos productos con esos filtros ♡"
    :"Próximamente, tus nuevos favoritos ♡ — Estamos preparando los primeros hallazgos de CNgirl.";
+
   box.append(div);
  }
 
@@ -173,11 +220,13 @@ function render(){
   link.className="link";
   link.textContent="VER FOTOS Y PRODUCTO ↗";
 
-  // Contador público de visitas.
+  // OJITO CON VISITAS REALES
   const contador=document.createElement("span");
   contador.className="cngirl-views";
   contador.setAttribute("aria-label","Visitas del producto");
-  contador.textContent="👁️ "+(visitasPorProducto[String(id)]||0).toLocaleString("es-ES");
+
+  contador.textContent=
+   "👁️ "+(visitasPorProducto[String(id)]||0).toLocaleString("es-ES");
 
   contador.style.display="inline-block";
   contador.style.marginTop="9px";
@@ -191,6 +240,7 @@ function render(){
  });
 }
 
+// INICIAR CATÁLOGO
 async function init(){
  try{
   const [loadedBrands,loadedProducts]=await Promise.all([
@@ -199,6 +249,7 @@ async function init(){
   ]);
 
   brands=Array.isArray(loadedBrands)?loadedBrands:[];
+
   products=Array.isArray(loadedProducts)
    ?loadedProducts
    :(loadedProducts&&typeof loadedProducts==="object"?[loadedProducts]:[]);
@@ -221,16 +272,17 @@ async function init(){
   filters();
   render();
 
-  // Cargar contadores sin bloquear el catálogo.
   await cargarVisitas();
   render();
 
  }catch(e){
   console.error("Error al cargar el catálogo:",e);
-  el("products").textContent="Error al cargar el catálogo. Abre la web desde GitHub Pages.";
+  el("products").textContent=
+   "Error al cargar el catálogo. Abre la web desde GitHub Pages.";
  }
 }
 
+// BUSCADOR GENERAL
 ["search","header-search"].forEach(id=>
  el(id).addEventListener("input",()=>{
   const other=id==="search"?"header-search":"search";
@@ -239,26 +291,39 @@ async function init(){
  })
 );
 
+// MARCAS Y ORDEN
 ["brand","sort"].forEach(id=>
  el(id).addEventListener("change",render)
 );
 
+// BUSCADOR DE MARCAS
 el("brand-search").addEventListener("input",updateBrandOptions);
 
+el("brand-search").addEventListener("keydown",e=>{
+ if(e.key==="Enter"){
+  e.preventDefault();
+  buscarMarcaConEnter();
+ }
+});
+
+// LIMPIAR FILTROS
 el("clear").onclick=()=>{
  cat="";
  gender="";
  color="";
+
  el("search").value="";
  el("header-search").value="";
  el("brand").value="";
  el("brand-search").value="";
  el("sort").value="new";
+
  updateBrandOptions();
  filters();
  render();
 };
 
+// PANEL DE FILTROS
 function panel(open){
  el("filter-panel").classList.toggle("open",open);
  el("toggle-filters").setAttribute("aria-expanded",String(open));
