@@ -2145,13 +2145,15 @@
   {
     "name": "Maison Mihara x Amiri",
     "brand": "Maison Mihara",
+    "extraBrands": [
+      "Amiri"
+    ],
     "gender": "Unisex",
     "category": "Zapatillas",
-    "price": 38.34,
+    "price": 41.3,
     "image": "assets/cellImage_705634069_340.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850547789&source=WD&affcode=gne2f",
-    "date": "2026-10-22",
-    "buyerPhotos": []
+    "date": "2026-10-22"
   },
   {
     "name": "Maison Mihara x Mastermind",
