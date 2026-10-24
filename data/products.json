@@ -189,7 +189,7 @@
   {
     "name": "Philipp Plein High Top",
     "brand": "Philipp plein",
-    "gender": "Unisex",
+    "gender": "Hombre",
     "category": "Zapatillas",
     "price": 77.91,
     "image": "assets/open1624782517-1624782517-0a6000000199e43af9aa0a231226_800_800.jpg",
@@ -198,7 +198,8 @@
     "buyerPhotos": [
       "assets/Captura de pantalla 2026-10-15 223308.png",
       "assets/Captura de pantalla 2026-10-15 223329.png"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "name": "Philipp Plein Sneaker",
