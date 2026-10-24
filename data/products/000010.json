@@ -1,15 +1,19 @@
 {
   "name": "Converse x Chrome Hearts",
   "brand": "Converse",
+  "extraBrands": [
+    "Chrome Hearts"
+  ],
   "gender": "Unisex",
   "category": "Zapatillas",
-  "price": 97.69,
+  "price": 59.69,
   "image": "assets/wdseller1748043198-72590000019a838036a30a8133cc_1180_1572.jpg",
-  "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7853473210&source=WD&affcode=gne2f",
+  "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7607476812&affcode=doppelfit",
   "date": "2026-10-15",
   "buyerPhotos": [
     "assets/Captura de pantalla 2026-10-15 222125.png",
     "assets/Captura de pantalla 2026-10-15 222142.png",
     "assets/Captura de pantalla 2026-10-15 222204.png"
-  ]
+  ],
+  "reviewed": true
 }
