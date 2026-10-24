@@ -1,11 +1,13 @@
 {
   "name": "Vans x ERD",
   "brand": "Vans",
+  "extraBrands": [
+    "ERD"
+  ],
   "gender": "Unisex",
   "category": "Zapatillas",
   "price": 80.26,
   "image": "assets/cellImage_705634069_332.jpg",
   "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=931681172842&source=WD&affcode=gne2f",
-  "date": "2026-10-22",
-  "buyerPhotos": []
+  "date": "2026-10-22"
 }
