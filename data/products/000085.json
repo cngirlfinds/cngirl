@@ -3,9 +3,12 @@
   "brand": "Sin marca",
   "gender": "Unisex",
   "category": "Pantalones",
-  "price": 66.88,
+  "price": 63,
   "image": "assets/cellImage_705634069_124.jpg",
-  "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850518365&source=WD&affcode=gne2f",
+  "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D1041707008765&affcode=doppelfit",
   "date": "2026-10-22",
-  "buyerPhotos": []
+  "buyerPhotos": [
+    "assets/Captura de pantalla 2026-10-24 215748.png"
+  ],
+  "reviewed": true
 }
