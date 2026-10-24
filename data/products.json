@@ -1225,11 +1225,14 @@
     "brand": "Vans",
     "gender": "Unisex",
     "category": "Zapatillas",
-    "price": 12.48,
+    "price": 20.29,
     "image": "assets/cellImage_705634069_134.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850559635&source=WD&affcode=gne2f",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7808733146&affcode=doppelfit",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-24 221901.png"
+    ],
+    "reviewed": true
   },
   {
     "name": "Maison Margiela Ski Buckle Shoes",
