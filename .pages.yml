@@ -1,3 +1,4 @@
+
 media:
   input: assets
   output: assets
@@ -10,7 +11,7 @@ content:
     format: json
     filename: "{year}-{month}-{day}-{hour}-{minute}-{second}-{primary}.json"
     view:
-      fields: [name, brand, category, price, date]
+      fields: [name, brand, category, price, reviewed, date]
       primary: name
       sort: [date, name]
       search: [name, brand, category]
@@ -22,15 +23,18 @@ content:
         label: Nombre del producto
         type: string
         required: true
+
       - name: brand
         label: Marca
         type: string
         required: true
+
       - name: extraBrands
         label: Marcas adicionales (colaboraciones)
         type: string
         list: true
         required: false
+
       - name: gender
         label: Género
         type: select
@@ -43,6 +47,7 @@ content:
               label: Mujer
             - value: Unisex
               label: Unisex
+
       - name: category
         label: Categoría
         type: select
@@ -63,25 +68,36 @@ content:
             - Accesorios
             - Relojes
             - Maletas y equipaje
+
       - name: price
         label: Precio en euros
         type: number
         required: true
+
       - name: image
         label: Fotografía
         type: image
+
       - name: url
         label: Enlace de compra
         type: string
         required: true
+
       - name: date
         label: Fecha
         type: date
+
       - name: buyerPhotos
         label: Fotos reales de compradores
         type: image
         list: true
+
       - name: color
         label: Color
         type: string
+        required: false
+
+      - name: reviewed
+        label: Revisado
+        type: boolean
         required: false
