@@ -2158,13 +2158,15 @@
   {
     "name": "Maison Mihara x Mastermind",
     "brand": "Maison Mihara",
+    "extraBrands": [
+      "Mastermind"
+    ],
     "gender": "Unisex",
     "category": "Zapatillas",
-    "price": 64.2,
+    "price": 74.5,
     "image": "assets/cellImage_705634069_341.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853567652&source=WD&affcode=gne2f",
-    "date": "2026-10-22",
-    "buyerPhotos": []
+    "date": "2026-10-22"
   },
   {
     "name": "Adidas x Raf Simons Ozweego",
