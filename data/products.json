@@ -5730,5 +5730,20 @@
     "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fdetail.1688.com%2Foffer%2F1034743066536.html&affcode=doppelfit",
     "date": "2026-10-26",
     "reviewed": true
+  },
+  {
+    "name": "Vivienne Westwood Croc Mini Shoulder Bag",
+    "brand": "Vivienne Westwood",
+    "gender": "Mujer",
+    "category": "Bolsos",
+    "price": 12.35,
+    "image": "assets/Captura de pantalla 2026-10-26 165233.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fdetail.1688.com%2Foffer%2F922799400826.html&affcode=doppelfit",
+    "date": "2026-10-26",
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-26 165344.png",
+      "assets/Captura de pantalla 2026-10-26 165321.png"
+    ],
+    "reviewed": true
   }
 ]
