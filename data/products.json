@@ -1065,7 +1065,8 @@
       "assets/Captura de pantalla 2026-10-19 230152.png",
       "assets/Captura de pantalla 2026-10-19 230208.png",
       "assets/Captura de pantalla 2026-10-19 230226.png"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "name": "Jersey Polo Ralph Lauren de Punto Trenzado",
@@ -1710,10 +1711,15 @@
     "brand": "Guiseppi Zanotti",
     "gender": "Hombre",
     "category": "Zapatillas",
-    "price": 67.48,
+    "price": 30.14,
     "image": "assets/cellImage_705634069_255.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850508527&source=WD&affcode=gne2f",
-    "date": "2026-10-22"
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D530574464915&affcode=doppelfit",
+    "date": "2026-10-22",
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-26 153600.png",
+      "assets/Captura de pantalla 2026-10-26 153617.png"
+    ],
+    "reviewed": true
   },
   {
     "name": "Guiseppi Zanotti",
