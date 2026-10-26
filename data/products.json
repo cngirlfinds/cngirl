@@ -1359,10 +1359,15 @@
     ],
     "gender": "Hombre",
     "category": "Zapatillas",
-    "price": 115.93,
+    "price": 117,
     "image": "assets/cellImage_705634069_142.jpg",
-    "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853483102&source=WD&affcode=gne2f",
-    "date": "2026-10-22"
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D998532234829&affcode=doppelfit",
+    "date": "2026-10-22",
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-26 160137.png",
+      "assets/Captura de pantalla 2026-10-26 160159.png"
+    ],
+    "reviewed": true
   },
   {
     "name": "Nofaithstudio \"Football\" Shoe",
