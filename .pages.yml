@@ -1,3 +1,4 @@
+
 media:
   input: assets
   output: assets
@@ -9,6 +10,7 @@ content:
     path: data/products
     format: json
     filename: "{year}-{month}-{day}-{hour}-{minute}-{second}-{primary}.json"
+
     view:
       fields: [name, brand, category, price, reviewed, date]
       primary: name
@@ -17,6 +19,7 @@ content:
       default:
         sort: date
         order: desc
+
     fields:
       - name: name
         label: Nombre del producto
@@ -85,6 +88,9 @@ content:
       - name: date
         label: Fecha
         type: date
+        options:
+          time: true
+          format: "yyyy-MM-dd'T'HH:mm:ss"
 
       - name: buyerPhotos
         label: Fotos reales de compradores
