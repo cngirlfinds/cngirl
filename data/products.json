@@ -1176,13 +1176,16 @@
   {
     "name": "Racer x New Rock Boots",
     "brand": "New Rock",
-    "gender": "Unisex",
+    "extraBrands": [
+      "Racer"
+    ],
+    "gender": "Hombre",
     "category": "Botas y botines",
-    "price": 196.17,
+    "price": 198.17,
     "image": "assets/cellImage_705634069_89.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7856610496&source=WD&affcode=gne2f",
     "date": "2026-10-21",
-    "buyerPhotos": []
+    "reviewed": true
   },
   {
     "name": "Lourdes Loser Hoodie",
