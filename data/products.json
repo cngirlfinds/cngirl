@@ -6633,5 +6633,21 @@
       "assets/Captura de pantalla 2026-10-27 002359.png"
     ],
     "reviewed": true
+  },
+  {
+    "name": "Camiseta Casablanca",
+    "brand": "Casablanca",
+    "gender": "Hombre",
+    "category": "Camisetas",
+    "price": 4,
+    "image": "assets/Captura de pantalla 2026-10-27 003412.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fdetail.1688.com%2Foffer%2F883414063990.html&affcode=doppelfit",
+    "date": "2026-10-27",
+    "createdAt": "2026-10-27T00:34:00",
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-27 003624.png",
+      "assets/Captura de pantalla 2026-10-27 003501.png"
+    ],
+    "reviewed": true
   }
 ]
