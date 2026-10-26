@@ -1,6 +1,9 @@
 {
   "name": "Fortnite x Balenciaga",
   "brand": "Balenciaga",
+  "extraBrands": [
+    "Fortnite"
+  ],
   "category": "Camisetas",
   "price": 22.56,
   "image": "assets/Captura de pantalla 2026-10-19 235519.png",
@@ -9,5 +12,6 @@
   "buyerPhotos": [
     "assets/Captura de pantalla 2026-10-19 235519-1.png",
     "assets/Captura de pantalla 2026-10-19 235538.png"
-  ]
+  ],
+  "reviewed": true
 }
