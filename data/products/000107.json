@@ -3,9 +3,13 @@
   "brand": "Golden Goose",
   "gender": "Unisex",
   "category": "Zapatillas",
-  "price": 47.26,
+  "price": 49.37,
   "image": "assets/cellImage_705634069_220.jpg",
-  "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853510744&source=WD&affcode=gne2f",
+  "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D7330749663&affcode=doppelfit",
   "date": "2026-10-22",
-  "buyerPhotos": []
+  "buyerPhotos": [
+    "assets/Captura de pantalla 2026-10-26 161036.png",
+    "assets/Captura de pantalla 2026-10-26 160946.png"
+  ],
+  "reviewed": true
 }
