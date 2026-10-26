@@ -1,11 +1,14 @@
 {
   "name": "Dior SS06 Jacket",
   "brand": "Dior",
-  "gender": "Unisex",
+  "gender": "Hombre",
   "category": "Chaquetas",
-  "price": 66.88,
+  "price": 53.2,
   "image": "assets/cellImage_705634069_54.jpg",
-  "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7852604153&source=WD&affcode=gne2f",
+  "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D1072491667222&affcode=doppelfit",
   "date": "2026-10-21",
-  "buyerPhotos": []
+  "buyerPhotos": [
+    "assets/Captura de pantalla 2026-10-26 153914.png"
+  ],
+  "reviewed": true
 }
