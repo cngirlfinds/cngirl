@@ -5914,5 +5914,24 @@
       "assets/Captura de pantalla (86).png"
     ],
     "reviewed": true
+  },
+  {
+    "name": "Mochila pokemon/hellokitty",
+    "brand": "Pokémon",
+    "extraBrands": [
+      "Hello Kitty"
+    ],
+    "category": "Maletas y equipaje",
+    "price": 4.82,
+    "image": "assets/Captura de pantalla 2026-10-26 180040.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D638601909494&affcode=doppelfit",
+    "date": "2026-10-26",
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-26 175901.png",
+      "assets/Captura de pantalla 2026-10-26 175614.png",
+      "assets/Captura de pantalla 2026-10-26 175641.png",
+      "assets/Captura de pantalla 2026-10-26 175659.png"
+    ],
+    "reviewed": true
   }
 ]
