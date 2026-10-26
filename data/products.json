@@ -1338,14 +1338,18 @@
   },
   {
     "name": "Yohji Yamamote Military Boots",
-    "brand": "Sin marca",
-    "gender": "Unisex",
+    "brand": "Yohji Yamamote ",
+    "gender": "Hombre",
     "category": "Botas y botines",
-    "price": 39.24,
+    "price": 55,
     "image": "assets/cellImage_705634069_139.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853407114&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "buyerPhotos": [
+      "assets/Captura de pantalla 2026-10-26 155435.png",
+      "assets/Captura de pantalla 2026-10-26 155459.png"
+    ],
+    "reviewed": true
   },
   {
     "name": "Rick Owens x Brikenstock",
