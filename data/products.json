@@ -1270,11 +1270,11 @@
     "brand": "Vans",
     "gender": "Unisex",
     "category": "Zapatillas",
-    "price": 81.15,
+    "price": 83.15,
     "image": "assets/cellImage_705634069_133.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850510477&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": []
+    "reviewed": true
   },
   {
     "name": "Maison Margiela Evolution",
