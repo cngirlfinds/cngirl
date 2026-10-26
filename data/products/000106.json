@@ -1,7 +1,7 @@
 {
   "name": "Gucci High Tops",
   "brand": "Gucci",
-  "gender": "Unisex",
+  "gender": "Hombre",
   "category": "Zapatillas",
   "price": 68.11,
   "image": "assets/cellImage_705634069_216.jpg",
@@ -10,5 +10,6 @@
   "buyerPhotos": [
     "assets/Captura de pantalla 2026-10-23 171256.png",
     "assets/Captura de pantalla 2026-10-23 171313.png"
-  ]
+  ],
+  "reviewed": true
 }
