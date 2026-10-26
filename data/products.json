@@ -1496,7 +1496,7 @@
   {
     "name": "Balenciaga Arena",
     "brand": "Balenciaga",
-    "gender": "Unisex",
+    "gender": "Hombre",
     "category": "Zapatillas",
     "price": 35.67,
     "image": "assets/cellImage_705634069_209.jpg",
@@ -1505,7 +1505,8 @@
     "buyerPhotos": [
       "assets/Captura de pantalla 2026-10-23 170403.png",
       "assets/Captura de pantalla 2026-10-23 170419.png"
-    ]
+    ],
+    "reviewed": true
   },
   {
     "name": "Balenciaga Arena High ",
