@@ -1,7 +1,7 @@
 {
   "name": "Maison Margiela Ski Buckle Shoes",
   "brand": "Maison Margiela",
-  "gender": "Unisex",
+  "gender": "Hombre",
   "category": "Zapatillas",
   "price": 124,
   "image": "assets/cellImage_705634069_138.jpg",
@@ -10,5 +10,6 @@
   "buyerPhotos": [
     "assets/Captura de pantalla 2026-10-23 162649.png",
     "assets/Captura de pantalla 2026-10-23 162726.png"
-  ]
+  ],
+  "reviewed": true
 }
