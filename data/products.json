@@ -4734,14 +4734,14 @@
   {
     "name": "Louis Vuitton Skates",
     "brand": "Louis Vuitton",
-    "gender": "Unisex",
+    "gender": "Hombre",
     "category": "Zapatillas",
     "price": 58.85,
     "image": "assets/cellImage_705634069_609.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850528217&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:06:00"
+    "createdAt": "2000-01-01T00:06:00",
+    "reviewed": false
   },
   {
     "name": "Louis Vuitton Skates",
