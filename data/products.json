@@ -5539,14 +5539,17 @@
   {
     "name": "Timberland x Chrome hearts",
     "brand": "Chrome Hearts",
+    "extraBrands": [
+      "Timberland"
+    ],
     "gender": "Unisex",
     "category": "Botas y botines",
     "price": 354.91,
     "image": "assets/cellImage_705634069_721.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850496807&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:07:06"
+    "createdAt": "2000-01-01T00:07:00",
+    "reviewed": false
   },
   {
     "name": "Timberland x Supreme Boots",
