@@ -1,12 +1,15 @@
 {
   "name": "UGG x Chrome hearts",
   "brand": "Chrome Hearts",
+  "extraBrands": [
+    "UGG"
+  ],
   "gender": "Unisex",
   "category": "Botas y botines",
   "price": 43.69,
   "image": "assets/cellImage_705634069_736.jpg",
   "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853481124&source=WD&affcode=gne2f",
   "date": "2026-10-22",
-  "buyerPhotos": [],
-  "createdAt": "2000-01-01T00:07:16"
+  "createdAt": "2000-01-01T00:07:00",
+  "reviewed": false
 }
