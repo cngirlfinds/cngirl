@@ -5554,14 +5554,17 @@
   {
     "name": "Timberland x Supreme Boots",
     "brand": "Timberland",
+    "extraBrands": [
+      "Supreme"
+    ],
     "gender": "Unisex",
     "category": "Botas y botines",
     "price": 72.23,
     "image": "assets/cellImage_705634069_722.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850443535&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:07:07"
+    "createdAt": "2000-01-01T00:07:00",
+    "reviewed": false
   },
   {
     "name": "Timberland x Supreme Boots",
