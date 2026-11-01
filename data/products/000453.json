@@ -1,12 +1,12 @@
 {
   "name": "Moon boot Low",
-  "brand": "Sin marca",
-  "gender": "Unisex",
+  "brand": "Moon boot",
+  "gender": "Mujer",
   "category": "Botas y botines",
-  "price": 63.31,
+  "price": 75.55,
   "image": "assets/cellImage_705634069_750.jpg",
   "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850498729&source=WD&affcode=gne2f",
   "date": "2026-10-22",
-  "buyerPhotos": [],
-  "createdAt": "2000-01-01T00:07:33"
+  "createdAt": "2000-01-01T00:07:00",
+  "reviewed": true
 }
