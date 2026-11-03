@@ -4245,50 +4245,62 @@
   {
     "name": "Nike Air x Off-white Presto ''The Ten''",
     "brand": "Off-White",
+    "extraBrands": [
+      "Nike"
+    ],
     "gender": "Unisex",
     "category": "Zapatillas",
     "price": 28.54,
     "image": "assets/cellImage_705634069_553.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850455283&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:05:19"
+    "createdAt": "2000-01-01T00:05:00",
+    "reviewed": true
   },
   {
     "name": "Nike Air x Off-white Presto ''The Ten''",
     "brand": "Off-White",
+    "extraBrands": [
+      "Nike"
+    ],
     "gender": "Unisex",
     "category": "Zapatillas",
     "price": 28.54,
     "image": "assets/cellImage_705634069_554.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850455283&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:05:20"
+    "createdAt": "2000-01-01T00:05:00",
+    "reviewed": true
   },
   {
     "name": "Nike Air x Off-white Presto ''The Ten''",
     "brand": "Off-White",
+    "extraBrands": [
+      "Nike"
+    ],
     "gender": "Unisex",
     "category": "Zapatillas",
     "price": 28.54,
     "image": "assets/cellImage_705634069_555.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850455283&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:05:21"
+    "createdAt": "2000-01-01T00:05:00",
+    "reviewed": true
   },
   {
     "name": "Nike Air Max 95 x Corteiz",
     "brand": "Nike",
+    "extraBrands": [
+      "Corteiz"
+    ],
     "gender": "Unisex",
     "category": "Zapatillas",
     "price": 32.99,
     "image": "assets/cellImage_705634069_563.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850446435&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:05:22"
+    "createdAt": "2000-01-01T00:05:00",
+    "reviewed": true
   },
   {
     "name": "Nike Air Max 95 x Corteiz",
@@ -5455,14 +5467,17 @@
   {
     "name": "Timberland x Chrome hearts",
     "brand": "Chrome Hearts",
+    "extraBrands": [
+      "Timberland"
+    ],
     "gender": "Unisex",
     "category": "Botas y botines",
     "price": 361.15,
     "image": "assets/cellImage_705634069_714.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850496807&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:06:59"
+    "createdAt": "2000-01-01T00:06:00",
+    "reviewed": true
   },
   {
     "name": "Timberland x Chrome hearts",
