@@ -6859,5 +6859,16 @@
     "date": "2026-11-03",
     "createdAt": "2026-11-03T23:52:00",
     "reviewed": true
+  },
+  {
+    "name": "Clip Hello kitty",
+    "brand": "Hello Kitty",
+    "category": "Accesorios",
+    "price": 1.26,
+    "image": "assets/Captura de pantalla 2026-11-03 235524.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fe.tb.cn%2Fh.jcirAtBla4grmQK%3Ftk%3D98zWTuRsvkq",
+    "date": "2026-11-03",
+    "createdAt": "2026-11-03T23:53:00",
+    "reviewed": true
   }
 ]
