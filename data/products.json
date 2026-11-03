@@ -5666,7 +5666,7 @@
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853481124&source=WD&affcode=gne2f",
     "date": "2026-10-22",
     "createdAt": "2000-01-01T00:07:00",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "name": "UGG x Chrome hearts",
@@ -5681,19 +5681,22 @@
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853481124&source=WD&affcode=gne2f",
     "date": "2026-10-22",
     "createdAt": "2000-01-01T00:07:00",
-    "reviewed": false
+    "reviewed": true
   },
   {
     "name": "UGG x Chrome hearts",
     "brand": "Chrome Hearts",
+    "extraBrands": [
+      "UGG"
+    ],
     "gender": "Unisex",
     "category": "Botas y botines",
     "price": 43.69,
     "image": "assets/cellImage_705634069_737.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7853481124&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:07:17"
+    "createdAt": "2000-01-01T00:07:00",
+    "reviewed": true
   },
   {
     "name": "UGG Tasman Slippers low heeled",
@@ -5964,51 +5967,51 @@
   },
   {
     "name": "Moon boot High",
-    "brand": "Sin marca",
+    "brand": "Moon boot",
     "gender": "Unisex",
     "category": "Botas y botines",
     "price": 71.34,
     "image": "assets/cellImage_705634069_757.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850498729&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:07:40"
+    "createdAt": "2000-01-01T00:07:00",
+    "reviewed": true
   },
   {
     "name": "Moon boot High",
-    "brand": "Sin marca",
+    "brand": "Moon Boot",
     "gender": "Unisex",
     "category": "Botas y botines",
     "price": 71.34,
     "image": "assets/cellImage_705634069_758.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850498729&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:07:41"
+    "createdAt": "2000-01-01T00:07:00",
+    "reviewed": true
   },
   {
     "name": "Moon boot High",
-    "brand": "Sin marca",
+    "brand": "Moon Boot",
     "gender": "Unisex",
     "category": "Botas y botines",
     "price": 71.34,
     "image": "assets/cellImage_705634069_759.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850498729&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:07:42"
+    "createdAt": "2000-01-01T00:07:00",
+    "reviewed": true
   },
   {
     "name": "Moon boot High",
-    "brand": "Sin marca",
+    "brand": "Moon Boot",
     "gender": "Unisex",
     "category": "Botas y botines",
     "price": 71.34,
     "image": "assets/cellImage_705634069_761.jpg",
     "url": "https://www.kakobuy.com/item/details?url=https://weidian.com/item.html?itemID=7850498729&source=WD&affcode=gne2f",
     "date": "2026-10-22",
-    "buyerPhotos": [],
-    "createdAt": "2000-01-01T00:07:43"
+    "createdAt": "2000-01-01T00:07:00",
+    "reviewed": true
   },
   {
     "name": "Moon boot High",
