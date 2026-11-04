@@ -70,6 +70,10 @@ content:
             - Accesorios
             - Relojes
             - Maletas y equipaje
+            - Peluches
+            - Figuras
+            - Juguetes y coleccionables
+            - Decoración
 
       - name: price
         label: Precio en euros
