@@ -6952,5 +6952,17 @@
     "date": "2026-11-04",
     "createdAt": "2026-11-04T17:30:00",
     "reviewed": true
+  },
+  {
+    "name": "Bolsito de mano",
+    "brand": "Vivienne Westwood",
+    "gender": "Mujer",
+    "category": "Bolsos",
+    "price": 4.32,
+    "image": "assets/Captura de pantalla 2026-11-04 173253.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fdetail.1688.com%2Foffer%2F797840676609.html&affcode=doppelfit",
+    "date": "2026-11-04",
+    "createdAt": "2026-11-04T17:33:00",
+    "reviewed": true
   }
 ]
