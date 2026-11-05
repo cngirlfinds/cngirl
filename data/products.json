@@ -7056,5 +7056,16 @@
     "date": "2026-11-05",
     "createdAt": "2026-11-05T19:03:00",
     "reviewed": true
+  },
+  {
+    "name": "Peluche de navidad Hello kitty",
+    "brand": "Hello Kitty",
+    "category": "Peluches",
+    "price": 5.54,
+    "image": "assets/Captura de pantalla 2026-11-05 190444.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D1095465901570",
+    "date": "2026-11-05",
+    "createdAt": "2026-11-05T19:04:00",
+    "reviewed": true
   }
 ]
