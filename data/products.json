@@ -7032,5 +7032,17 @@
     "date": "2026-11-05",
     "createdAt": "2026-11-05T19:00:00",
     "reviewed": true
+  },
+  {
+    "name": "Bolsito blanco hello kitty",
+    "brand": "Hello Kitty",
+    "gender": "Mujer",
+    "category": "Bolsos",
+    "price": 22.42,
+    "image": "assets/Captura de pantalla 2026-11-05 190149.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D948331497479",
+    "date": "2026-11-05",
+    "createdAt": "2026-11-05T19:01:00",
+    "reviewed": true
   }
 ]
