@@ -7089,5 +7089,16 @@
     "date": "2026-11-05",
     "createdAt": "2026-11-05T19:08:00",
     "reviewed": true
+  },
+  {
+    "name": "Peluche Hello Kitty con traje tradicional chino",
+    "brand": "Hello Kitty",
+    "category": "Peluches",
+    "price": 7.75,
+    "image": "assets/Captura de pantalla 2026-11-05 191007.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D1085095779565",
+    "date": "2026-11-05",
+    "createdAt": "2026-11-05T19:09:00",
+    "reviewed": true
   }
 ]
