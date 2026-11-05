@@ -7100,5 +7100,16 @@
     "date": "2026-11-05",
     "createdAt": "2026-11-05T19:09:00",
     "reviewed": true
+  },
+  {
+    "name": "Hello Kitty musculosa",
+    "brand": "Hello Kitty",
+    "category": "Peluches",
+    "price": 18,
+    "image": "assets/Captura de pantalla 2026-11-05 191154.png",
+    "url": "https://item2.kakobuy.com/item/details?url=https%3A%2F%2Fitem.taobao.com%2Fitem.htm%3Fid%3D892247808454",
+    "date": "2026-11-05",
+    "createdAt": "2026-11-05T19:12:00",
+    "reviewed": true
   }
 ]
